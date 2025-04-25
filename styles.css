@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #fceabb, #f8b500);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    padding: 40px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    color: #d94f4f;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #a63a3a;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.message p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+#loveButton {
+    background-color: #d94f4f;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(217,79,79,0.4);
+}
+
+#loveButton:hover {
+    background-color: #a63a3a;
+}
+
+#heartContainer {
+    margin-top: 30px;
+    min-height: 100px;
+    position: relative;
+}
+
+footer p {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #999;
+}
+
+.heart {
+    position: absolute;
+    font-size: 2rem;
+    animation-name: floatUp;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes floatUp {
+    0% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-150px) scale(1.5);
+    }
+}
